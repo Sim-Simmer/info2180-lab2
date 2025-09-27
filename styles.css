@@ -1,0 +1,120 @@
+.pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.float-left{
+    float: left;
+    width: 150px;
+    height: 170px;
+    margin-right: 15px;
+}
+
+.float-right{
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+body{
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header" "main aside" "footer footer";
+    gap: 20px;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    grid-area: footer;
+    padding-left: 10%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+}
+
+main h2{
+    font-size: 32px;
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman',Times, serif;
+    margin-top: 1px;
+}
+
+.dateinfo{
+    color: #718096;
+    padding: 0;
+}
+
+.aside-sm-arch{
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman',Times, serif;
+    padding: 0;
+}
+
+.aside-abt{
+    background-color: #E2E8F0;
+    padding: 5%;
+}
+
+.aside-abt h3{
+    font-family: Georgia, 'Times New Roman',Times, serif;
+    color: #000000;
+}
+
+aside ul li{
+    color: #4299E1;
+}
+
+
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
+
+article {
+    padding: 30px 30px;
+}
+
+article p{
+    padding: 15px, 15px;
+}
